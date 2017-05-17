@@ -1,6 +1,3 @@
-// https://github.com/airbnb/javascript/tree/master/es5
-// https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
-// jshint -W003, -W040
 (function() {
     'use strict';
 
@@ -24,8 +21,7 @@
         $state
     ) {
         var vm = this;
-
-
+        //TODO
 
     }
 })();

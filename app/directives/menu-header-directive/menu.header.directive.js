@@ -1,5 +1,5 @@
 /**
- @module headerMenu
+ @module menuHeaderDirective
  @description header menu directive
  */
 (function() {
@@ -13,7 +13,7 @@
     function menuHeaderDirective() {
         return {
             restrict : 'AE',
-            templateUrl: 'app/directives/header-menu-directive/header.menu.tpl.html',
+            templateUrl: 'directives/menu-header-directive/menu.header.tpl.html',
             controller : 'MenuHeaderController',
             scope: {
                 angularConfig: '=?'

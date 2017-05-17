@@ -1,0 +1,28 @@
+[
+    {
+        "title": "Home",
+        "categories": [{
+            "title": "menu item 1",
+            "data": [{
+                "title": "Sub menu 01",
+                "code": "subMenu01"
+            }, {
+                "title": "Sub menu 02",
+                "code": "subMenu02"
+            }]
+        }]
+    },
+    {
+        "title": "Farmily",
+        "categories": [{
+            "title": "menu item 3",
+            "data": [{
+                "title": "Sub menu 03",
+                "code": "subMenu03"
+            }, {
+                "title": "Sub menu 04",
+                "code": "subMenu04"
+            }]
+        }]
+    }
+]
