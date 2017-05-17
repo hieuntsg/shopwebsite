@@ -3,7 +3,6 @@
     'use strict';
 
     angular.module('shopApp', [
-        // 'flash',
         "angular-hal",
         "camelCaseToHuman",
         "checklist-model",

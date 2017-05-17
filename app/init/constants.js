@@ -2,5 +2,9 @@
 
 angular.module('shopApp')
 .constant('shopEventConstants', {
-    // EVENT_NAME	: 'event:////'
+    	HEADER_MENU : {
+            MENU_EVENT_NAME : "event:menu-item",
+		SUB_MENU_EVENT_NAME : "event:sub-menu-item"
+	}
+
 });

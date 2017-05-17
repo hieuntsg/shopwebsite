@@ -11,24 +11,18 @@
     routes.$inject = ['$stateProvider'];
 
     function routes($stateProvider) {
-
-        $stateProvider.state('home', {
-            abstract: true,
-            controller: 'shopBaseController',
-            controllerAs: 'baseVm',
-            templateUrl: '_shared/base.tpl.html',
+        $stateProvider.state('mainHome', {
+            parent: 'home',
+            controller: 'shopingCartController',
+            controllerAs: 'shopingCartVm',
+            templateUrl: 'views/shopingCart/shopingCart.tpl.html',
             resolve: {
                 $title: function() {
-                    return 'SHOP | Yahu';
+                    return 'SHOP | Yahu | Main';
                 }
             },
-            url: '/home'
+            url: '/main'
         });
-
-        
-
-        
-
 
     }
 })();

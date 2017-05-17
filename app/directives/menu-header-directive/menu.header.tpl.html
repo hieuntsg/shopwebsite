@@ -1,0 +1,11 @@
+<a>{{data.title}}</a>
+<ul class="dropdown-menu" role="menu" aria-labelledby="single-button" >
+    <li role="menuitem" class="dropdown-sub-menu" ng-repeat="category in data.categories" ng-if="!category.isHidden" ng-click="onClickMenuItem(category)" ng-class="{'active':category.isActive}">
+
+        <a ng-if="category.href" href="{{category.href}}" target="{{category.target}}">{{category.title}}</a>
+        <a ng-if="!category.href" >{{category.title}}</a>
+        <ul class="dropdown-menu sub-menu" role="menu" aria-labelledby="single-button" ng-if="category.data && category.data.length > 0" ng-class="{'students-wrapper':category.isStudentMenuItems}">
+            <li role="menuitem" ng-repeat="item in category.data" ng-click="onClickSubMenuItem(item)"><a>{{item.display}}</a></li>
+        </ul>
+    </li>
+</ul>
