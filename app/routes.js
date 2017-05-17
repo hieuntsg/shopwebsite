@@ -13,7 +13,7 @@
     function routes($stateProvider) {
 
         $stateProvider.state('home', {
-            abstract: true,
+            // abstract: true,
             controller: 'shopBaseController',
             controllerAs: 'baseVm',
             templateUrl: 'app/_shared/base.tpl.html',

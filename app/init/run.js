@@ -13,16 +13,16 @@ angular.module('shopApp')
             console.error('State Change Error Occurred:', toState, fromState);
         });
 
-        $rootScope.safeApply = function (fn) {
-            var phase = $rootScope.$$phase;
-            if (phase === '$apply' || phase === '$digest') {
-                if (fn && (typeof (fn) === 'function')) {
-                    fn();
-                }
-            } else {
-                this.$apply(fn);
-            }
-        };
+        // $rootScope.safeApply = function (fn) {
+        //     var phase = $rootScope.$$phase;
+        //     if (phase === '$apply' || phase === '$digest') {
+        //         if (fn && (typeof (fn) === 'function')) {
+        //             fn();
+        //         }
+        //     } else {
+        //         this.$apply(fn);
+        //     }
+        // };
 
         $document.on('keydown', function (e) {
             if (e.which === 8) {

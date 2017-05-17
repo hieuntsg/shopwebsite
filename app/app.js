@@ -3,9 +3,8 @@
     'use strict';
 
     angular.module('shopApp', [
-        'flash',
+        // 'flash',
         "angular-hal",
-        "angularSpinner",
         "camelCaseToHuman",
         "checklist-model",
         "dndLists",
@@ -18,13 +17,12 @@
         "ngclipboard",
         "ngCookies",
         "ngFileUpload",
-        "ngImgCrop",
+        // "ngImgCrop",
         "ngMaterial",
         "ngResource",
         "ngSanitize",
         "once",
         "ordinal",
-        "swaggerUi",
         "ui.bootstrap",
         "ui.highlight",
         "ui.router.title",

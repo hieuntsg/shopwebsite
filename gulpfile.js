@@ -35,7 +35,7 @@ gulp.task('moveTemplates', function(){
 gulp.task('templateCache', function(){
 	var timeStamp = new Date().getTime();
 	return gulp.src(['app/*.html','app/**/*.html'])
-		.pipe(templateCache({module: 'app'}))
+		.pipe(templateCache({module: 'shopApp'}))
 		.pipe(gulp.dest('app/templates'));
 });
 
