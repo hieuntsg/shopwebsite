@@ -1,7 +1,7 @@
 # How To Use
 
 ```
-git clone https://github.com/hieuntsg/shopwebsite.git
+$ git clone https://github.com/hieuntsg/shopwebsite.git
 $ cd shopwebsite
 $ npm install
 $ npm install bower -g
