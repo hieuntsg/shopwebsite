@@ -1,0 +1,141 @@
+<!doctype html>
+<html ng-app="shopApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href=".">
+    <title ng-bind="($title || 'Home')">Shop Yahu</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- build:css app/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap-select/dist/css/bootstrap-select.css" />
+    <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css" />
+    <link rel="stylesheet" href="bower_components/select2/select2.css" />
+    <link rel="stylesheet" href="bower_components/dropzone/dist/min/dropzone.min.css" />
+    <link rel="stylesheet" href="bower_components/angular-flash-alert/dist/angular-flash.css" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+    <link rel="stylesheet" href="bower_components/angular-material-data-table/dist/md-data-table.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!--[if IE]>
+    <!/-- in:compiled --/>
+    <!/-- endcompiled --/>
+    <![endif]-->
+
+    <!--[if !IE]><!-->
+    <!-- build:css app/app.css -->
+    <!-- injector:css -->
+    <link rel="stylesheet" type="text/css" href="app/app.css">
+    <!-- endinjector -->
+    <!-- endbuild -->
+    <!--<![endif]-->
+
+    <!-- <link href="src/assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" /> -->
+</head>
+
+<body>
+    <!-- <dui-header></dui-header> -->
+    <div class="container">
+    	<section id="well" ui-view></section>
+    </div>
+    
+    
+    <!-- <footer ng-class="Session.navigation.$has('email_verification') ?  'footer right50' : 'footer'"></footer> -->
+
+    <!-- build:js app/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/rfc6570/rfc6570.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/angular-ui-router-title/angular-ui-router-title.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/checklist-model/checklist-model.js"></script>
+    <script src="bower_components/angular-endless-scroll/dist/angular-endless-scroll.js"></script>
+    
+    <script src="bower_components/angular-ui-utils/ui-utils.js"></script>
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="bower_components/angularjs-ordinal-filter/ordinal-browser.js"></script>
+    <script src="bower_components/angular-once/once.js"></script>
+    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+    
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/angular-ui-sortable/sortable.js"></script>
+    <script src="bower_components/angularjs-camelCase-human/camelcase-browser.js"></script>
+    <script src="bower_components/angular-ui-select/dist/select.js"></script>
+    <script src="bower_components/select2/select2.js"></script>
+
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/clipboard/dist/clipboard.js"></script>
+    <script src="bower_components/ngclipboard/dist/ngclipboard.js"></script>
+    <script src="bower_components/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="bower_components/angular-flash-alert/dist/angular-flash.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-material-data-table/dist/md-data-table.js"></script>
+    <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+    <script src="bower_components/angular-drag-and-drop-lists/angular-drag-and-drop-lists.js"></script>
+    <script src="bower_components/jsdiff/diff.js"></script>
+    <!-- endbower -->
+
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <!-- endbuild -->
+
+    <!-- Pendo -->
+    <script>
+        (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+        v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
+        o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+        y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/a5082566-42d7-443b-5ffd-978a595c0f6c/pendo.js';
+        z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+    </script>
+    <!-- End Pendo -->
+
+    <script>
+        ;(function() {
+            var walkme = document.createElement('script');
+            walkme.type = 'text/javascript';
+            walkme.async = true;
+            walkme.src = 'https://cdn.walkme.com/users/ea4dcbd9607d4464be750721eaf2e32c/walkme_ea4dcbd9607d4464be750721eaf2e32c_https.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(walkme, s);
+            window._walkmeConfig = {smartLoad:true};
+        })();
+    </script>
+
+    <!-- build:js app/app.js -->
+    <script src="app/app.js"></script>
+    <!-- injector:js -->
+
+    <script type="text/javascript" src="app/init/config.js"></script>
+    <script type="text/javascript" src="app/init/constants.js"></script>
+    <script type="text/javascript" src="app/init/run.js"></script>
+
+    <script type="text/javascript" src="app/modules/angular-hal.js"></script>
+    <script type="text/javascript" src="app/modules/bootstrap-material-ui-select.js"></script>
+    <script type="text/javascript" src="app/modules/hard-refresh.service.js"></script>
+    <script type="text/javascript" src="app/modules/http-auth.service.js"></script>
+    <script type="text/javascript" src="app/modules/placeholders-0.0.1-SNAPSHOT.js"></script>
+    
+    <script type="text/javascript" src="app/_shared/base.controller.js"></script>
+    
+
+    <!-- endinjector -->
+    <!-- endbuild -->
+
+    <!-- in:tpls -->
+    <!-- endtpls -->
+    </body>
+</html>

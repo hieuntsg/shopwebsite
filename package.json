@@ -1,0 +1,33 @@
+{
+  "name": "PersonalSite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^2.1.2"
+  },
+  "devDependencies": {
+    "bower": "^1.6.3",
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-html-replace": "^1.6.2",
+    "del": "^2.2.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.0.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-strip-comments": "^1.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "less-plugin-autoprefix": "^1.5.1",
+    "requirejs": "~2.1.20",
+    "serve-static": "^1.10.0",
+    "should": "~7.1.1"
+  }
+}
